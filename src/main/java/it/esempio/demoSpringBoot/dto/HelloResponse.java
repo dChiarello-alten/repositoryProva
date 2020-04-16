@@ -1,4 +1,4 @@
-package it.esempio.demoSpringBoot;
+package it.esempio.demoSpringBoot.dto;
 
 import java.util.Objects;
 

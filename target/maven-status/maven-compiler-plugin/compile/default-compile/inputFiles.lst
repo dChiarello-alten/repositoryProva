@@ -1,3 +1,3 @@
 /home/dave/workspace/repositoryProva/src/main/java/it/esempio/demoSpringBoot/controller/HelloController.java
 /home/dave/workspace/repositoryProva/src/main/java/it/esempio/demoSpringBoot/application/DemoSpringBootApplication.java
-/home/dave/workspace/repositoryProva/src/main/java/it/esempio/demoSpringBoot/HelloResponse.java
+/home/dave/workspace/repositoryProva/src/main/java/it/esempio/demoSpringBoot/dto/HelloResponse.java

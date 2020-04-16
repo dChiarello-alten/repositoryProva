@@ -1,16 +1,15 @@
 package it.esempio.demoSpringBoot.controller;
 
-import it.esempio.demoSpringBoot.HelloResponse;
+import it.esempio.demoSpringBoot.application.DemoSpringBootApplication;
+import it.esempio.demoSpringBoot.dto.HelloResponse;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.boot.test.web.client.TestRestTemplate;
-
+import org.springframework.test.context.ContextConfiguration;
 import static org.assertj.core.api.Assertions.assertThat;
-import static org.junit.jupiter.api.Assertions.*;
 
-@SpringBootApplication
+@ContextConfiguration(classes={DemoSpringBootApplication.class})
 @SpringBootTest(webEnvironment = SpringBootTest.WebEnvironment.RANDOM_PORT)
 class HelloControllerTest {
 
