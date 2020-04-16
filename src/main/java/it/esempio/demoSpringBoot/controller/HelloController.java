@@ -1,6 +1,6 @@
 package it.esempio.demoSpringBoot.controller;
 
-import it.esempio.demoSpringBoot.HelloResponse;
+import it.esempio.demoSpringBoot.dto.HelloResponse;
 import org.springframework.http.MediaType;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
