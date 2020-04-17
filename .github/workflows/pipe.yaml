@@ -1,4 +1,4 @@
-name: Maven
+name: pipe
 
 on:
   push:
