@@ -92,6 +92,7 @@
                 <sonar.projectKey>dChiarello-alten_repositoryProva</sonar.projectKey>
                 <sonar.organization>dchiarello-alten</sonar.organization>
                 <sonar.host.url>https://sonarcloud.io</sonar.host.url>
+                <sonar.login>23f535ebd4b5e37a315339df111f14e860fb4900</sonar.login>
             </properties>
             <activation>
                 <activeByDefault>false</activeByDefault>
