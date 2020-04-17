@@ -12,14 +12,28 @@ import static org.assertj.core.api.Assertions.assertThat;
 
 @ContextConfiguration(classes = {DemoSpringBootApplication.class})
 @SpringBootTest(webEnvironment = SpringBootTest.WebEnvironment.RANDOM_PORT)
-public class HelloController2Test {
+public class HelloController3Test {
 
     @Autowired
     private TestRestTemplate restTemplate;
 
     @Test
     public void testStatusOk() {
-        HelloResponse actual = this.restTemplate.getForObject("/hello2/status", HelloResponse.class);
+        HelloResponse actual = this.restTemplate.getForObject("/hello3/status", HelloResponse.class);
+        HelloResponse expected = buildExpectedOkResponse();
+        assertThat(actual).isEqualTo(expected);
+    }
+
+    @Test
+    public void testStatus2Ok() {
+        HelloResponse actual = this.restTemplate.getForObject("/hello3/status2", HelloResponse.class);
+        HelloResponse expected = buildExpectedOkResponse();
+        assertThat(actual).isEqualTo(expected);
+    }
+
+    @Test
+    public void testStatus3Ok() {
+        HelloResponse actual = this.restTemplate.getForObject("/hello3/status3", HelloResponse.class);
         HelloResponse expected = buildExpectedOkResponse();
         assertThat(actual).isEqualTo(expected);
     }
