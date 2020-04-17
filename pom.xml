@@ -16,7 +16,7 @@
 
     <properties>
         <java.version>1.8</java.version>
-        <code.coverage.exclusions>**/it/esempio/demoSpringBoot/dto**, **/it/esempio/demoSpringBoot/application/Application.java</code.coverage.exclusions>
+        <code.coverage.exclusions>**/it/esempio/demoSpringBoot/dto**, **/it/esempio/demoSpringBoot/application/DemoSpringBootApplication.java</code.coverage.exclusions>
     </properties>
 
     <dependencies>
@@ -28,7 +28,12 @@
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-web-services</artifactId>
         </dependency>
-
+        <dependency>
+            <groupId>org.junit.jupiter</groupId>
+            <artifactId>junit-jupiter-engine</artifactId>
+            <version>${junit-jupiter.version}</version>
+            <scope>test</scope>
+        </dependency>
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-test</artifactId>
@@ -82,10 +87,10 @@
             <id>sonar</id>
             <properties>
                 <sonar.sources>.</sonar.sources>
-                <sonar.inclusions>src/main/java/**, src/main/resources/**</sonar.inclusions>
+                <sonar.inclusions>src/main/java/**,src/main/resources/**</sonar.inclusions>
                 <sonar-exclusions>${code.coverage.exclusions}</sonar-exclusions>
-                <sonar.projectKey>dChiarello-alten</sonar.projectKey>
-                <sonar.organization>dChiarello-alten</sonar.organization>
+                <sonar.projectKey>dChiarello-alten_repositoryProva</sonar.projectKey>
+                <sonar.organization>dchiarello-alten</sonar.organization>
                 <sonar.host.url>https://sonarcloud.io</sonar.host.url>
             </properties>
             <activation>
