@@ -87,6 +87,7 @@
             <id>sonar</id>
             <properties>
                 <sonar.sources>.</sonar.sources>
+<!--                COMMENTO A CAZZO-->
                 <sonar.inclusions>src/main/java/**,src/main/resources/**</sonar.inclusions>
                 <sonar-exclusions>${code.coverage.exclusions}</sonar-exclusions>
                 <sonar.projectKey>dChiarello-alten_repositoryProva</sonar.projectKey>
