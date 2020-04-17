@@ -17,7 +17,7 @@
     <properties>
         <java.version>1.8</java.version>
         <code.coverage.exclusions>**/it/esempio/demoSpringBoot/dto**,
-            **/it/esempio/demoSpringBoot/application/Application.java
+            **/it/esempio/demoSpringBoot/application/DemoSpringBootApplication.java
         </code.coverage.exclusions>
     </properties>
 
